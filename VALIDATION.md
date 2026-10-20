@@ -37,10 +37,20 @@ aus requirements-dev.txt. Aktuelle Läufe und Ergebnisse stehen unter
 Zusätzlich bestanden zuvor 29 unabhängige Protokoll-/Transporttests unter Python 3.12.2
 mit aiohttp 3.14.5. Dabei wurden die HA-unabhängigen Module isoliert geladen.
 
+## Bestätigter Praxistest
+
+Am 20. Oktober 2026 meldete der Nutzer die erfolgreiche Anmeldung über den Config Flow
+und die sofortige Anlage des Geräts und seiner Entitäten in seiner realen Installation.
+Der unverändert bereitgestellte [Screenshot](docs/images/ksem-device-sensors.png) zeigt
+alle sechs Sensoren mit Messwerten: Strom L1/L2/L3 sowie Wirkleistung L1/L2/L3.
+Die genaue Home-Assistant-Version wurde für diesen Test nicht angegeben.
+
+- [x] Anmeldung und Einrichtung über den Config Flow.
+- [x] Ein KSEM-Gerät und alle sechs Sensoren mit Messwerten.
+
 ## Noch in der echten Installation zu prüfen
 
-- [ ] Migration vom alten YAML-Block, Neustart und UI-Einrichtung.
-- [ ] Ein Gerät und genau sechs verfügbare Sensoren.
+- [ ] Migration und Neustart gesondert dokumentieren.
 - [ ] Alle Werte und Leistungsvorzeichen mit der KSEM-Oberfläche vergleichen.
 - [ ] Netzwerkausfall: nicht verfügbar, anschließend automatische Wiederverbindung.
 - [ ] Passwortänderung: erneute Authentifizierung und Wiederaufnahme des Streams.
@@ -48,5 +58,6 @@ mit aiohttp 3.14.5. Dabei wurden die HA-unabhängigen Module isoliert geladen.
 - [ ] Mehrstündiger Betrieb, Firmwarekompatibilität und HACS-Installation nach Veröffentlichung.
 
 Die Ausgangsversion wurde laut Nutzer mit KSEM-Firmware 2.7.2 plausibel betrieben.
-Die neue Fassung wurde hier nicht mit einem realen KSEM verbunden. Es wurden keine
-bestehende Home-Assistant-Installation und keine Geräteeinstellungen verändert.
+Der bestätigte Hardwaretest wurde vom Nutzer durchgeführt; die Entwicklungsumgebung
+war nicht direkt mit seinem KSEM verbunden. Die weiteren offenen Prüfungen oben
+werden durch den Screenshot und die erfolgreiche Ersteinrichtung nicht bestätigt.

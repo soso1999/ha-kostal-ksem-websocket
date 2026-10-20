@@ -10,6 +10,14 @@ KOSTAL KSEM WebSocket** mit IP/Hostname und Administratorpasswort.
 Die Integration aktiviert keine Geräteschnittstellen und schreibt keine KSEM-Einstellungen.
 Sie meldet sich am Web-Login an und liest ausschließlich den Smart-Meter-Datenstrom.
 
+## In Home Assistant
+
+![KOSTAL KSEM WebSocket in Home Assistant mit Strom und Wirkleistung für L1, L2 und L3](docs/images/ksem-device-sensors.png)
+
+**Praxistest am 20. Oktober 2026 bestätigt:** Die Anmeldung über den Config Flow
+war erfolgreich. Das KSEM-Gerät und alle sechs Entitäten erschienen sofort;
+der Screenshot zeigt Strom L1/L2/L3 und Wirkleistung L1/L2/L3 mit Messwerten.
+
 ## Sechs Sensoren
 
 | Entität | Einheit | Umrechnung |
@@ -33,8 +41,10 @@ der funktionierenden Vorlage als Null interpretiert.
 - KSEM-Administratorpasswort; ein manuell angelegter API-Schlüssel ist nicht erforderlich.
 - Ausgangsversion laut Nutzerrückmeldung mit KSEM-Firmware **2.7.2** funktionierend,
   einschließlich plausibler Werte aller sechs Sensoren. Andere Firmwarestände sind unbestätigt.
-- Der neue Config Flow und der neue Verbindungslebenszyklus benötigen noch den Test
-  in der realen Home-Assistant-/KSEM-Installation. Kein offizielles KOSTAL-Protokollversprechen.
+- Config Flow, Geräteanlage und sechs Entitäten wurden am 20. Oktober 2026 in einer
+  echten Home-Assistant-/KSEM-Installation vom Nutzer bestätigt. Langzeitbetrieb,
+  Wiederverbindung und Reauthentifizierung benötigen noch den Praxistest.
+  Kein offizielles KOSTAL-Protokollversprechen.
 
 ## Installation
 
