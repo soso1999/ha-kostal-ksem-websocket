@@ -4,7 +4,7 @@ Inoffizielle Home-Assistant-Custom-Integration für den KOSTAL Smart Energy Mete
 Einrichtung über **Einstellungen → Geräte & Dienste → Integration hinzufügen →
 KOSTAL KSEM WebSocket** mit IP/Hostname und Administratorpasswort.
 
-[☕ Entwicklung unterstützen](https://buymeacoffee.com/soso1999)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy_Me_a_Coffee-Unterst%C3%BCtzen-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/soso1999)
 
 **Local Push über WebSocket/Protobuf. Kein Modbus TCP, kein KSEM TCP-Slave.**
 Die Integration aktiviert keine Geräteschnittstellen und schreibt keine KSEM-Einstellungen.
@@ -98,6 +98,15 @@ Keine privaten Adressen, Passwörter oder Tokens sind Bestandteil dieses Pakets.
 
 Siehe `CONTRIBUTING.md`, `VALIDATION.md`, `PUBLISHING.md` und `RELEASE_v0.1.0.md`.
 Repository: [soso1999/ha-kostal-ksem-websocket](https://github.com/soso1999/ha-kostal-ksem-websocket).
+
+## Unterstützung ☕
+
+Wenn dir diese Integration hilft, kannst du meine Arbeit freiwillig mit einem Kaffee
+unterstützen. Damit unterstützt du die Weiterentwicklung und Pflege des Projekts.
+
+**[☕ Auf Buy Me a Coffee unterstützen](https://buymeacoffee.com/soso1999)**
+
+Vielen Dank für deine Unterstützung! Die Integration bleibt kostenlos und unter der MIT-Lizenz verfügbar.
 
 ## Lizenz und Credits
 
