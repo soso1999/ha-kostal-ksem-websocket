@@ -31,7 +31,8 @@ dies ist keine vollständig aufgelöste oder gestartete HA-Installation. Mehrere
 benötigte HA-Abhängigkeiten fehlen, einige Hilfsbibliotheken haben neuere Versionen.
 Eine DeprecationWarning stammt aus Home Assistants HTTP-Anwendung.
 Der mitgelieferte CI-Workflow verwendet Python 3.13 und die vollständigen Anforderungen
-aus requirements-dev.txt; dieser GitHub-Workflow wurde noch nicht auf GitHub ausgeführt.
+aus requirements-dev.txt. Aktuelle Läufe und Ergebnisse stehen unter
+[GitHub Actions](https://github.com/soso1999/ha-kostal-ksem-websocket/actions).
 
 Zusätzlich bestanden zuvor 29 unabhängige Protokoll-/Transporttests unter Python 3.12.2
 mit aiohttp 3.14.5. Dabei wurden die HA-unabhängigen Module isoliert geladen.
