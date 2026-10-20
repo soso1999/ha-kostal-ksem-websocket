@@ -1,0 +1,52 @@
+{
+  "title": "KOSTAL KSEM WebSocket",
+  "config": {
+    "step": {
+      "user": {
+        "title": "KOSTAL KSEM",
+        "description": "IP/Hostname und Administratorpasswort eingeben. Die Verbindung wird mit Live-Messdaten geprüft.",
+        "data": {
+          "host": "IP-Adresse / Hostname",
+          "password": "Administratorpasswort"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Passwort aktualisieren",
+        "data": {
+          "password": "Administratorpasswort"
+        }
+      }
+    },
+    "error": {
+      "invalid_host": "Ungültiger Hostname (ohne URL, Port oder Pfad).",
+      "invalid_auth": "Anmeldung abgelehnt. Passwort prüfen.",
+      "cannot_connect": "Keine gültigen KSEM-Livewerte empfangen. Netzwerk und Firmware prüfen."
+    },
+    "abort": {
+      "already_configured": "Bereits eingerichtet.",
+      "reauth_successful": "Passwort aktualisiert."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "current_l1": {
+        "name": "Strom L1"
+      },
+      "current_l2": {
+        "name": "Strom L2"
+      },
+      "current_l3": {
+        "name": "Strom L3"
+      },
+      "power_l1": {
+        "name": "Wirkleistung L1"
+      },
+      "power_l2": {
+        "name": "Wirkleistung L2"
+      },
+      "power_l3": {
+        "name": "Wirkleistung L3"
+      }
+    }
+  }
+}

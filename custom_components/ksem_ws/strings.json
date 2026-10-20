@@ -1,0 +1,52 @@
+{
+  "title": "KOSTAL KSEM WebSocket",
+  "config": {
+    "step": {
+      "user": {
+        "title": "KOSTAL KSEM",
+        "description": "Enter the host and administrator password. Live measurements are required to validate the connection.",
+        "data": {
+          "host": "IP address / hostname",
+          "password": "Administrator password"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Update password",
+        "data": {
+          "password": "Administrator password"
+        }
+      }
+    },
+    "error": {
+      "invalid_host": "Invalid host (no URL, port or path).",
+      "invalid_auth": "Authentication rejected. Check the password.",
+      "cannot_connect": "No valid KSEM live data received. Check network and firmware."
+    },
+    "abort": {
+      "already_configured": "Already configured.",
+      "reauth_successful": "Password updated."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "current_l1": {
+        "name": "Current L1"
+      },
+      "current_l2": {
+        "name": "Current L2"
+      },
+      "current_l3": {
+        "name": "Current L3"
+      },
+      "power_l1": {
+        "name": "Active power L1"
+      },
+      "power_l2": {
+        "name": "Active power L2"
+      },
+      "power_l3": {
+        "name": "Active power L3"
+      }
+    }
+  }
+}
