@@ -1,4 +1,4 @@
-# Prüfstand v0.1.0
+# Prüfstand v0.1.1
 
 Datum: 20. Oktober 2026.
 

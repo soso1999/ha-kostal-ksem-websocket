@@ -1,4 +1,4 @@
-# KOSTAL KSEM WebSocket · v0.1.0
+# KOSTAL KSEM WebSocket · v0.1.1
 
 Inoffizielle Home-Assistant-Custom-Integration für den KOSTAL Smart Energy Meter.
 Einrichtung über **Einstellungen → Geräte & Dienste → Integration hinzufügen →

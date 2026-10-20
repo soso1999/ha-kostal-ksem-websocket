@@ -9,7 +9,7 @@ COMPONENT = ROOT / "custom_components/ksem_ws"
 
 def test_manifest_and_hacs():
     manifest = json.loads((COMPONENT / "manifest.json").read_text())
-    assert manifest["version"] == "0.1.0"
+    assert manifest["version"] == "0.1.1"
     assert manifest["config_flow"] is True
     assert manifest["iot_class"] == "local_push"
     assert manifest["requirements"] == []
