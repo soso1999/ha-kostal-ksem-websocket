@@ -48,23 +48,35 @@ der funktionierenden Vorlage als Null interpretiert.
 
 ## Installation
 
-### Manuell
+### Über HACS (empfohlen)
+
+Die Integration ist im [offiziellen HACS-Katalog](https://github.com/hacs/default/blob/master/integration)
+enthalten. Ein benutzerdefiniertes Repository ist **nicht erforderlich**.
+Voraussetzung ist ein bereits [installiertes und eingerichtetes HACS](https://www.hacs.xyz/docs/use/).
+
+1. **HACS** in Home Assistant öffnen und nach **KOSTAL KSEM WebSocket** suchen.
+2. Den Eintrag öffnen und **Herunterladen** wählen.
+3. Home Assistant vollständig neu starten.
+4. Unter **Einstellungen → Geräte & Dienste → Integration hinzufügen** nach
+   **KOSTAL KSEM WebSocket** suchen.
+5. IP-Adresse oder Hostname **ohne URL-Schema, Port und Pfad** sowie das
+   KSEM-Administratorpasswort eingeben.
+
+Die Einrichtung ist erst erfolgreich, wenn Anmeldung, WebSocket und ein gültiger
+Smart-Meter-Messdatensatz empfangen wurden. Danach erscheinen ein Gerät und sechs Entitäten.
+
+**Bereits über HACS installiert?** Die bestehende Einrichtung kann weiterverwendet
+werden. Wegen der Katalogaufnahme ist keine Neuinstallation und keine erneute
+Einrichtung des KSEM-Geräts erforderlich. Weitere Versionen werden über HACS angeboten.
+Für die alte YAML-Testversion gelten die Migrationsschritte unten.
+
+### Manuell (Alternative ohne HACS)
 
 1. Den Ordner `custom_components/ksem_ws` vollständig in das gleichnamige Verzeichnis
-   unter deiner Home-Assistant-Konfiguration kopieren.
+   unter deiner Home-Assistant-Konfiguration kopieren, sodass dort
+   `custom_components/ksem_ws/manifest.json` liegt.
 2. Home Assistant vollständig neu starten.
-3. Integration hinzufügen, IP-Adresse oder Hostname **ohne URL-Schema, Port und Pfad**
-   sowie Administratorpasswort eingeben.
-4. Die Einrichtung ist erst erfolgreich, wenn Anmeldung, WebSocket und ein gültiger
-   Smart-Meter-Messdatensatz empfangen wurden. Danach erscheinen ein Gerät und sechs Entitäten.
-
-### HACS Custom Repository
-
-[Dieses Repository](https://github.com/soso1999/ha-kostal-ksem-websocket) in HACS unter benutzerdefinierte Repositories eintragen,
-Typ **Integration** wählen, herunterladen und Home Assistant neu starten.
-Danach wie oben einrichten. Das Projekt ist nicht als HACS-Standardrepository gelistet.
-Die aktuelle HACS-Struktur ist gemäß [HACS-Dokumentation](https://www.hacs.xyz/docs/publish/integration/)
-vorbereitet; eine HACS-Aufnahme/Live-Validierung ist damit nicht behauptet.
+3. Die Integration wie oben ab Schritt 4 über **Einstellungen → Geräte & Dienste** einrichten.
 
 ## Wechsel von der YAML-Testversion
 
