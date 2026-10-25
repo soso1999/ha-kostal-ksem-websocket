@@ -7,7 +7,9 @@ Repository: https://github.com/soso1999/ha-kostal-ksem-websocket (öffentlich).
 3. Tests und Formatprüfungen ausführen; `SHA256SUMS` und Download-ZIP neu erzeugen.
 4. Änderungen auf GitHub hochladen und GitHub Actions prüfen.
 5. Passenden Release-Tag erstellen; für v0.1.0 ist `RELEASE_v0.1.0.md` der Release-Text.
-6. Repository als HACS Custom Repository vom Typ Integration testen.
+6. Installation und Updates über den vorhandenen HACS-Katalogeintrag testen.
 
-Die Prüfungen ersetzen keine Aufnahme in die HACS-Standardliste.
+Das Repository ist in der [HACS-Standardliste](https://github.com/hacs/default/blob/master/integration) enthalten.
+Für reine Dokumentationskorrekturen ist kein Versionswechsel und kein neuer Release erforderlich;
+die Versions- und Release-Schritte gelten für neue Integrationsversionen.
 Keine `.storage`-Dateien, Backups oder persönliche `secrets.yaml` hochladen.
